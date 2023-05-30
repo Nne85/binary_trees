@@ -21,7 +21,8 @@ struct binary_tree_s
 typedef struct binary_tree_s binary_tree_t;
 typedef struct binary_tree_s avl_t;
 typedef struct binary_tree_s heap_t;
-
+typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s bst_t;
 /** Func Prototype */
 void binary_tree_print(const binary_tree_t *);
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -51,4 +52,10 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
 int is_complete(const binary_tree_t *tree, size_t index, size_t node_count);
 size_t count_nodes(const binary_tree_t *tree);
 int binary_tree_is_complete(const binary_tree_t *tree);
+
+
+/*BINARY SEARCH */
+int binary_tree_is_bst(const binary_tree_t *tree);
+binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+
 #endif /* _BINARY_TREES_H_ */

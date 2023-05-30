@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include "binary_trees.h"
 
+bst_t *bst_insert(bst_t **tree, int value);
 /**
  * main - Entry point
  *
