@@ -31,5 +31,5 @@ int is_bst_helper(const binary_tree_t *tree, const binary_tree_t *min,
  */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
-        return (is_bst_helper(tree, NULL, NULL));
+	return (is_bst_helper(tree, NULL, NULL));
 }
