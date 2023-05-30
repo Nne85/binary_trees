@@ -72,6 +72,11 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+bst_t *bst_minimum_value(bst_t *node);
 bst_t *bst_remove(bst_t *root, int value);
+int successor(bst_t *node);
+int two_children(bst_t *root);
+int remove_type(bst_t *root);
+
 bst_t *bst_insert(bst_t **tree, int value);
 #endif /* _BINARY_TREES_H_ */
