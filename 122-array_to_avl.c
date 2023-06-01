@@ -1,6 +1,7 @@
 #include "binary_trees.h"
 
 /**
+<<<<<<< HEAD
  * bal - Measures balance factor of a AVL
  * @tree: tree to go through
  * Return: balanced factor
@@ -132,4 +133,24 @@ avl_t *avl_remove(avl_t *root, int value)
 		return (NULL);
 	bal(&root_a);
 	return (root_a);
+=======
+ * array_to_avl - Builds an AVL tree from an array
+ * @array: Pointer to the first element of the array
+ * @size: Number of elements in the array
+ *
+ * Return: Pointer to the root node of the created AVL tree, or NULL on failure
+ */
+avl_t *array_to_avl(int *array, size_t size)
+{
+	avl_t *root = NULL;
+	size_t i;
+
+	if (array == NULL || size == 0)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		avl_insert(&root, array[i]);
+
+	return (root);
+>>>>>>> 75a694f94e09fd0d8f8087d6c819afed361642b7
 }
