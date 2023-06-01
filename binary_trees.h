@@ -87,6 +87,7 @@ size_t binary_tree_height(const binary_tree_t *tree);
 
 bst_t *bst_insert(bst_t **tree, int value);
 avl_t *r_insert_node(avl_t **tree, avl_t *parent, avl_t **new, int nval);
+binary_tree_t *binary_tree_min(const binary_tree_t *tree);
 avl_t *avl_insert_recursive(avl_t **tree, int value);
 avl_t *avl_balance(avl_t **tree);
 #endif /* _BINARY_TREES_H_ */
